@@ -104,12 +104,19 @@ print(df)
 BenignGroup = df[df["Class"].isin([2])]
 BenignGroup = BenignGroup.drop(BenignGroup.columns[0], axis=1)
 
+BenignGroup = BenignGroup.apply(pd.to_numeric, errors='coerce')
+
 
 print(BenignGroup)
 # remove unwanted column of identifying numbers // https://stackoverflow.com/questions/39399712/delete-pandas-column-with-no-name
 
 MalignantGroup = df[df["Class"].isin([4])]
 MalignantGroup = MalignantGroup.drop(MalignantGroup.columns[0], axis=1)
+# https://www.datasciencelearner.com/pd-to_numeric-method-pandas-dataframe/ avoid ? character in Bare Nuclei
+# https://stackoverflow.com/questions/34844711/convert-entire-pandas-dataframe-to-integers-in-pandas-0-17-0
+# How to user pd.to_numeric with a dataframe
+
+MalignantGroup = MalignantGroup.apply(pd.to_numeric, errors='coerce')
 print(MalignantGroup)
 
 # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html

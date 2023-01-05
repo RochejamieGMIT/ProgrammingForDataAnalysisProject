@@ -20,51 +20,18 @@ Data columns (total 11 columns):
 dtypes: int64(10), object(1)
 memory usage: 60.2+ KB
 
-The summary for the Iris-setosa Species is as follows: 
-        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size Bare Nuclei  Bland Chromatin  Normal Nucleoli   Mitoses
-min            1.000000                 1.000000                  1.000000           1.000000                     1.000000           1         1.000000         1.000000  1.000000
-max            8.000000                 9.000000                  8.000000          10.000000                    10.000000           ?         7.000000         9.000000  8.000000
-median         3.000000                 1.000000                  1.000000           1.000000                     2.000000         NaN         2.000000         1.000000  1.000000
-mean           2.956332                 1.325328                  1.443231           1.364629                     2.120087         NaN         2.100437         1.290393  1.063319
-The summary for the Iris-versicolor Species is as follows: 
-        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size Bare Nuclei  Bland Chromatin  Normal Nucleoli    Mitoses
-min            1.000000                 1.000000                  1.000000           1.000000                     1.000000           1         1.000000         1.000000   1.000000
-max           10.000000                10.000000                 10.000000          10.000000                    10.000000           ?        10.000000        10.000000  10.000000
-median         8.000000                 6.000000                  6.000000           5.000000                     5.000000         NaN         7.000000         6.000000   1.000000
-mean           7.195021                 6.572614                  6.560166           5.547718                     5.298755         NaN         5.979253         5.863071   2.589212
-This is a summary of the breast cancer databases that was obtained from the University of Wisconsin Hospitals 
- Overall data set information:
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 699 entries, 0 to 698
-Data columns (total 11 columns):
- #   Column                       Non-Null Count  Dtype 
----  ------                       --------------  ----- 
- 0   id number                    699 non-null    int64 
- 1   Clump Thickness              699 non-null    int64 
- 2   Uniformity of Cell Size      699 non-null    int64 
- 3   Uniformity of Cell Shape     699 non-null    int64 
- 4   Marginal Adhesion            699 non-null    int64 
- 5   Single Epithelial Cell Size  699 non-null    int64 
- 6   Bare Nuclei                  699 non-null    object
- 7   Bland Chromatin              699 non-null    int64 
- 8   Normal Nucleoli              699 non-null    int64 
- 9   Mitoses                      699 non-null    int64 
- 10  Class                        699 non-null    int64 
-dtypes: int64(10), object(1)
-memory usage: 60.2+ KB
-
 The summary for the benign results are as follows: 
-        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size Bare Nuclei  Bland Chromatin  Normal Nucleoli   Mitoses
-min            1.000000                 1.000000                  1.000000           1.000000                     1.000000           1         1.000000         1.000000  1.000000
-max            8.000000                 9.000000                  8.000000          10.000000                    10.000000           ?         7.000000         9.000000  8.000000
-median         3.000000                 1.000000                  1.000000           1.000000                     2.000000         NaN         2.000000         1.000000  1.000000
-mean           2.956332                 1.325328                  1.443231           1.364629                     2.120087         NaN         2.100437         1.290393  1.063319
+        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size  Bare Nuclei  Bland Chromatin  Normal Nucleoli   Mitoses
+min            1.000000                 1.000000                  1.000000           1.000000                     1.000000     1.000000         1.000000         1.000000  1.000000
+max            8.000000                 9.000000                  8.000000          10.000000                    10.000000    10.000000         7.000000         9.000000  8.000000
+median         3.000000                 1.000000                  1.000000           1.000000                     2.000000     1.000000         2.000000         1.000000  1.000000
+mean           2.956332                 1.325328                  1.443231           1.364629                     2.120087     1.346847         2.100437         1.290393  1.063319
 The summary for the malignat results are as follows: 
-        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size Bare Nuclei  Bland Chromatin  Normal Nucleoli    Mitoses
-min            1.000000                 1.000000                  1.000000           1.000000                     1.000000           1         1.000000         1.000000   1.000000
-max           10.000000                10.000000                 10.000000          10.000000                    10.000000           ?        10.000000        10.000000  10.000000
-median         8.000000                 6.000000                  6.000000           5.000000                     5.000000         NaN         7.000000         6.000000   1.000000
-mean           7.195021                 6.572614                  6.560166           5.547718                     5.298755         NaN         5.979253         5.863071   2.589212
+        Clump Thickness  Uniformity of Cell Size  Uniformity of Cell Shape  Marginal Adhesion  Single Epithelial Cell Size  Bare Nuclei  Bland Chromatin  Normal Nucleoli    Mitoses
+min            1.000000                 1.000000                  1.000000           1.000000                     1.000000     1.000000         1.000000         1.000000   1.000000
+max           10.000000                10.000000                 10.000000          10.000000                    10.000000    10.000000        10.000000        10.000000  10.000000
+median         8.000000                 6.000000                  6.000000           5.000000                     5.000000    10.000000         7.000000         6.000000   1.000000
+mean           7.195021                 6.572614                  6.560166           5.547718                     5.298755     7.627615         5.979253         5.863071   2.589212
  Bare Nuclei is not working correctly, I am going to add it to the summary .txt to look in to it 
 0       1
 1      10
