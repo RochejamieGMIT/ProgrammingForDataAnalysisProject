@@ -107,7 +107,7 @@ BenignGroup = BenignGroup.drop(BenignGroup.columns[0], axis=1)
 BenignGroup = BenignGroup.apply(pd.to_numeric, errors='coerce')
 
 
-print(BenignGroup)
+# print(BenignGroup)
 # remove unwanted column of identifying numbers // https://stackoverflow.com/questions/39399712/delete-pandas-column-with-no-name
 
 MalignantGroup = df[df["Class"].isin([4])]
@@ -176,3 +176,6 @@ f.close()
 
 
 #print(df)
+
+#fig = px.histogram(df, x=["Clump Thickness"], color="Class")
+#fig.show()
