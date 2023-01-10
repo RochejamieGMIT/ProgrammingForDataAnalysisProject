@@ -42,13 +42,16 @@ Nearest neighbour, over multiple test was able to match the accuracy of Naive Ba
 
 I then wrote a brief summary of the parameters used, followed by a compare and contrast of the results. 
 
-Then finally there was an attempt to synthesis data. I was able to recreate the classification ratio relatively accurately, but the individual values did not correlate to each other accurately. This is because generated each value individually using the weightings of the frequency that values appeared in the original data for the attributes. Then I used the nearest neighbour classifier to create the class column for the data. 
+Then finally there was an attempt to manually synthesis data. I was able to recreate the classification ratio relatively accurately, but the individual values did not correlate to each other accurately. This is because generated each value individually using the weightings of the frequency that values appeared in the original data for the attributes. Then I used the nearest neighbour classifier to create the class column for the data. 
 
 With more time, I could apply the same weightings per attribute based on the previous result of generated attribute. 
 This could be tedious with nested else if statements, but in theory could give more accurate results. or at least results that would appear to be more accurate to the original data.
 
 if the attributes were ranked in highest correlation and then the highest correlated values were generated in succession and had the frequencies specific to the previous generated value be the weights of the next value to be generated that could be a way to synthesis data. 
 
+I then found a package to synthesis data, SDV. I then synthesised 500 lines of data, the class was incorrect, so i replaced the incorrect class with reclassified values to line up with the correct output. 
+
+Added graphs to show the correlation of the correct data. and then used concat to append the data to the existing data. 
 
 References: 
 As a note, I have relied on code I have written in previous modules, particularly code for the pands project:
