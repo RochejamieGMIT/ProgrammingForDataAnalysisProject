@@ -19,4 +19,4 @@ sklearn.model_selection
 sklearn.naive_bayes 
 klearn.tree 
 random
-sdv.tabular i
+sdv.tabular 
